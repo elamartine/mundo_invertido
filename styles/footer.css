@@ -1,0 +1,23 @@
+.conteiner-footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+.footer-conteiner p {
+  text-align: center;
+  max-width: 62ch;
+  padding-bottom: 24px;
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--highlight-color);
+}

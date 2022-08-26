@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Mundo Invertido</title>
+</head>
+
+<body class="light-theme">
+    <header class="conteiner-header">
+        <div class="conteiner">
+            <div class="img-header">
+                <img src="./images/banner/logo.svg" alt="">
+            </div>
+
+            <p>Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a recompensa é grande: salvar Hawkings e o mundo todo das garras de Vecna. Você está preparado? Então clique no botão abaixo para entrar no Mundo Invertido! </p>
+            <button class="btn">Inverter mundos</button>
+
+        </div>
+
+    </header>
+
+    <main class="conteiner-main2">
+        <section class="conteiner">
+            <div class="conteiner-main">
+                <div class="conteudo-section-1">
+                    <h1 class="titulo">o mundo <br> invertido</h1>
+                    <p>O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas horrendas, tempestades assustadoras, muita escuridão e entidades malignas. Um reino controlado por Vecna, que tem planos de trazer tudo isso ao nosso mundo. </p>
+                </div>
+                <div class="img-section-1">
+                    <img src="./images/content/inverted-world.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="conteiner">
+            <div class="conteiner-vol-4">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/otutSrxYpa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="conteudo-section-2">
+                    <h1>stranger <br> things vol. 4</h1>
+                    <p>Mais experientes, os heróis de Stranger Things também precisam enfrentar desafios maiores do que nunca e fazer decisões que vão mudar suas vidas para sempre. Confira ao lado o trailer da quarta temporada. </p>
+                </div>
+            </div>
+
+        </section>
+        <section class="galeria-background">
+            <div class="conteiner">
+                <div class="conteudo-section-galeria">
+                    <h1 class="titulo">a segunda série mais <br> assistida da netflix</h1>
+                    <ul class="lista-galeria">
+                        <li>
+                            <img src="./images/content/serie-image-01.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/content/serie-image-02.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/content/serie-image-03.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="conteiner">
+            <div class="conteudo-formulario">
+                <h1 class="titulo">o clube Dungeons & Dragons</h1>
+                <p>Para deter Vecna, os heróis de Stranger Things também precisam de você.
+                    O Clube de D&D mais famoso de Hawkings está com vagas abertas para sua próxima aventura. Se você é destemido, gosta de desafios e não tem medo de rodar o D20, chegou a hora de se inscrever para fazer parte da nova campanha
+                </p>
+            </div>
+
+            <div class="conteiner-forms">
+                <div>
+                <h1 class="titulo">
+                    entre para o clube de d&d e tenha experiências de outro mundo.
+                </h1>
+            </div>
+            <form action="" class="formulario">
+                <div class="item-formulario">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="item-formulario">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="item-formulario">
+                    <label for="level">Level</label>
+                    <input type="text" name="level" id="level">
+                </div>
+                <div class="item-formulario">
+                    <label for="personagem">Personagem</label>
+                    <textarea name="personagem" id="personagem" cols="30" rows="10">
+
+                    </textarea>
+                </div>
+
+            
+                
+
+
+
+            </form></div>
+            
+
+
+        </section>
+        <section></section>
+
+    </main>
+
+    <footer class="conteiner-footer">
+        <div class="conteiner">
+            <div class="footer-conteiner">
+                <p>Projeto construído para fins didáticos, com o objetivo de colocar em prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO._</p>
+                <img src="./images/footer/logo.svg" alt="">
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        document.querySelector('.btn').addEventListener('click', (e) => {
+            document.body.classList.toggle('dark-theme');
+        });
+    </script>
+</body>
+
+</html>

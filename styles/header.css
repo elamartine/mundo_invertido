@@ -1,0 +1,69 @@
+
+header {
+  text-align: center;
+  position: relative;
+  min-height: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--header-background-color);
+
+}
+
+.conteiner-header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/banner/florest.webp");
+  background-size: cover;
+  background-position: center 90%;
+  position: absolute;
+  filter: saturate(0);
+ opacity: 0.2;
+}
+.conteiner-header::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--character-top-image-color);
+  -webkit-mask: var(--character-top-image-src) bottom / 100% no-repeat;
+  position: absolute;
+}
+
+
+header p {
+  color: var(--highlight-color);
+  max-width: 65ch;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-family: "libre Baskerville";
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.img-header img {
+  margin: auto;
+  width: 80%;
+}
+.img-header-bicicletas img {
+  margin: auto;
+}
+.conteiner-header .conteiner{
+  max-width: 700px;
+  padding: 80px 20px;
+  z-index: 2;
+}
+
+
+
+@media (max-width: 800px){
+  header p{
+    font-size: 14px;
+    max-width: 45ch;
+  }
+  .img-header img{
+    width: 60%;
+  }
+}
