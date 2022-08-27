@@ -247,8 +247,8 @@ main::after {
     text-align: left;
     max-width: 30ch;
   }
-  .conteiner-vol-4 {
-    grid-template-columns: 1fr;
+  .conteiner-vol-4 h1{
+    font-size: 3rem;
   }
   .video {
     height: 300px;
@@ -278,6 +278,14 @@ main::after {
   main::before {
     max-height: 300px;
   }
+  .conteudo-formulario p{
+    font-size: 12px;
+    text-align: left;
+  }
+  .conteiner-vol-4 h1{
+    font-size: 1.5rem;
+    line-height: 133%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -287,6 +295,9 @@ main::after {
   .video {
     height: 150px;
     width: 250px;
+  }
+  .conteiner-forms{
+    padding-bottom: 60px;
   }
 }
 
