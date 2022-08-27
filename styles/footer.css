@@ -29,7 +29,7 @@ footer::after, footer::before{
   position: absolute;
   width: 300px;
   height: 200px;
-  background: url("../images/footer/tape.svg") no-repeat;
+  background: url("./images/footer/tape.svg") no-repeat;
   background-size: contain;
   bottom: -50px;
 }
