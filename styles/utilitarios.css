@@ -39,28 +39,33 @@
   line-height: 133%;
   display: flex;
   margin-bottom: 40px;
-
 }
-.detalhe{
+.detalhe {
   color: var(--primary-color);
 }
 
-.item-formulario{
+.item-formulario {
   display: flex;
   flex-direction: column;
 }
 
-@media (max-width:800px){
-  .titulo{
+@media (max-width: 800px) {
+  .titulo {
     font-size: 2rem;
   }
 }
-@media (max-width:600px){
-  .titulo{
+@media (max-width: 600px) {
+  .titulo {
     font-size: 1.5rem;
   }
-  .btn{
+  .btn {
     font-size: 1rem;
     padding: 12px 28px;
+  }
+}
+@media (max-width: 400px) {
+  .btn {
+    font-size: 0.75;
+    padding: 10px 26px;
   }
 }
