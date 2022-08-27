@@ -41,6 +41,9 @@
   margin-bottom: 40px;
 
 }
+.detalhe{
+  color: var(--primary-color);
+}
 
 .item-formulario{
   display: flex;
@@ -55,5 +58,9 @@
 @media (max-width:600px){
   .titulo{
     font-size: 1.5rem;
+  }
+  .btn{
+    font-size: 1rem;
+    padding: 12px 28px;
   }
 }

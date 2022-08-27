@@ -1,11 +1,10 @@
 /* conteiner section main */
-.conteiner-main2{
+.conteiner-main2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
-main::before{
+main::before {
   content: "";
   height: 500px;
   width: 100%;
@@ -13,12 +12,10 @@ main::before{
   margin: auto;
   top: 3;
   background-color: var(--character-bottom-image-color);
-  -webkit-mask: var(--character-bottom-image-src) bottom / 100%  no-repeat;
+  -webkit-mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
   position: relative;
   transform: rotateZ(-180deg) scaleX(-1);
-  
 }
-
 
 .conteiner-main p {
   font-family: "Libre Baskerville";
@@ -27,6 +24,7 @@ main::before{
   font-size: 16px;
   line-height: 20px;
   color: var(--highlight-color);
+  margin: auto;
 }
 .conteiner-main {
   display: grid;
@@ -35,16 +33,16 @@ main::before{
   align-items: center;
   gap: 80px;
 }
-.img-section-1 img{
+.img-section-1 img {
   margin: auto;
 }
 
 /* conteiner-vol-4 */
-.video{
+.video {
   position: relative;
 }
-.video iframe{
-  border:  var(--primary-color) solid 2px;
+.video iframe {
+  border: var(--primary-color) solid 2px;
   box-shadow: -30px 25px var(--primary-color);
   position: absolute;
   inset: 0;
@@ -52,9 +50,8 @@ main::before{
   height: 100%;
   display: inline-block;
   margin-left: 30px;
-
 }
-.conteiner-vol-4{
+.conteiner-vol-4 {
   padding-top: 100px;
   padding-bottom: 100px;
   display: grid;
@@ -62,7 +59,7 @@ main::before{
   gap: 80px;
 }
 
-.conteudo-section-2 h1{ 
+.conteudo-section-2 h1 {
   margin-bottom: 24px;
   font-family: var(--featured-font-family);
   font-style: normal;
@@ -74,10 +71,10 @@ main::before{
   text-transform: uppercase;
   color: var(--primary-color);
 }
-.conteudo-section-2{
+.conteudo-section-2 {
   align-self: center;
 }
-.conteudo-section-2 p{
+.conteudo-section-2 p {
   font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: 400;
@@ -88,19 +85,17 @@ main::before{
 }
 /* conteiner-galeria */
 
-
 .conteudo-section-galeria ul {
- overflow-x: auto;
+  overflow-x: auto;
   display: flex;
   gap: 60px;
   padding: 30px;
-
 }
 
-.galeria-background{
+.galeria-background {
   position: relative;
 }
-.galeria-background::before{
+.galeria-background::before {
   content: "";
   position: absolute;
   right: -125px;
@@ -110,69 +105,84 @@ main::before{
   background-repeat: no-repeat;
   background-position: center right;
 }
-.galeria-background .conteiner{
+.galeria-background .conteiner {
   align-items: flex-start;
 }
-.galeria-background{
+.galeria-background {
   max-width: 100%;
 }
-.conteudo-section-galeria li img{ 
+.conteudo-section-galeria li img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   display: block;
 }
 
-
-.conteudo-section-galeria img{
+.conteudo-section-galeria img {
   border: 4px solid var(--primary-color);
   padding: 10px;
   background-color: var(--highlight-color);
   outline: 20px solid var(--highlight-color);
 }
-.conteudo-section-galeria li{
- width: 250px;
- height: 250px;
- min-width: 250px;
-
+.conteudo-section-galeria li {
+  width: 250px;
+  height: 250px;
+  min-width: 250px;
 }
-.conteudo-section-galeria{
+.conteudo-section-galeria {
   padding-bottom: 120px;
 }
-.conteiner-forms{
+.conteiner-forms {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
 }
-.item-formulario input{
+.item-formulario input {
   background-color: black;
   padding: 10px;
+  border: #fff solid 2px;
 }
-.item-formulario label{
+.item-formulario label {
   margin-bottom: 6px;
   margin-top: 10px;
-  
-
+   font-family: "Libre Baskerville";
+   font-size: 1rem;
+   color: #fff;
 }
 
-.item-formulario textarea{
+.item-formulario textarea {
   background-color: black;
-
+  border: #fff solid 2px;
 }
-.formulario{
- padding: 24px;
- background-color: var(--primary-color);
+.formulario {
+  padding: 24px;
+  background-color: var(--primary-color);
   box-shadow: 30px 25px var(--highlight-color);
 }
-.conteudo-formulario{
+.conteiner-forms{
+  padding-bottom: 120px;
+}
+.conteudo-formulario {
   display: flex;
   flex-direction: column;
- align-items: center;
- padding-bottom: 60px;
+  align-items: center;
+  padding-bottom: 60px;
 }
-.conteudo-formulario p{
+.titulo-formulario {
+  color: var(--highlight-color);
+  font-family: var(--featured-font-family);
+  font-size: 3rem;
+  font-weight: 900;
+  align-items: center;
+  text-transform: uppercase;
+  line-height: 155%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.conteudo-formulario p {
   max-width: 700px;
+  text-align: left;
   text-align: center;
   font-family: "Libre Baskerville";
   font-style: normal;
@@ -181,73 +191,93 @@ main::before{
   line-height: 20px;
   color: var(--highlight-color);
 }
-main{
+main {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main::after{
+main::after {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
-  background: var(--page-background) no-repeat, url("../images/backgrounds/florest.png") no-repeat;
+  background: var(--page-background) no-repeat,
+    url("../images/backgrounds/florest.png") no-repeat;
   z-index: -1;
   background-size: cover;
 }
 
-
-
-@media (max-width: 800px){
-  .conteiner-main{
+@media (max-width: 800px) {
+  main::before {
+    max-height: 500px;
+  }
+  .conteiner-main {
     grid-template-columns: 1fr;
   }
-  .conteiner-main h1{
+  .conteiner-main h1 {
     justify-content: center;
   }
-  .conteiner-main p{
+  .conteiner-main p {
     max-width: 30ch;
     text-align: center;
     justify-content: center;
   }
-  .conteiner-vol-4{
+  .conteiner-vol-4 {
     grid-template-columns: 1fr;
     gap: 60px;
     box-sizing: border-box;
   }
-  .conteudo-section-2 h1{
+  .conteudo-section-2 h1 {
     text-align: left;
   }
-  .conteudo-section-2 p{
+  .conteudo-section-2 p {
     text-align: left;
     max-width: 30ch;
   }
-  .conteiner-vol-4{
+  .conteiner-vol-4 {
     grid-template-columns: 1fr;
   }
-  .video{
+  .video {
     height: 300px;
-   
   }
-  .conteudo-section-2{
+  .conteudo-section-2 {
     padding: 10px 40px 10px 40px;
   }
-  .conteiner-forms{
+  .conteiner-forms {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 700px) {
+  main::before {
+    max-height: 400px;
+  }
+}
 
-@media (max-width: 600px){
-  .video{
+@media (max-width: 600px) {
+  .video {
     height: 200px;
     width: 300px;
   }
+  main::before {
+    max-height: 300px;
+  }
 }
 
-.dark-theme img ,.dark-theme header p{
+@media (max-width: 400px) {
+  main::before {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 300px) {
+  main::before {
+    min-height: 200px;
+  }
+}
+
+.dark-theme img,
+.dark-theme header p {
   transform: rotateZ(180deg) scaleX(-1);
-  
 }
-

@@ -63,7 +63,13 @@ header p {
     font-size: 14px;
     max-width: 45ch;
   }
-  .img-header img{
-    width: 60%;
+  header{
+    min-height: 750px;
+  }
+}
+@media (max-width: 600px){
+  
+  header{
+    min-height: 650px;
   }
 }
