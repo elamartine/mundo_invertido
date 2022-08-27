@@ -16,8 +16,8 @@ btn.addEventListener("click", async() => {
     personagem: personagem.value,
   }
  console.log(nome.value.length, email.value.length, level.value.length, personagem.value.length);
-if(nome.value === "" && email.value === "" && level.value === "" && personagem.value === ""){
-  alert("Preencha os campos")
+if(nome.value === "" || email.value === "" || level.value === "" || personagem.value === ""){
+  alert("Preencha todos os campos")
 }
 else{
 const inscricaoId = await inscricaoAoClube(inscricao)

@@ -144,6 +144,10 @@ main::before {
   border: #fff solid 2px;
   color: #fff;
 }
+input:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 30px black inset;
+  -webkit-text-fill-color: #fff;
+}
 .item-formulario label {
   margin-bottom: 6px;
   margin-top: 10px;
