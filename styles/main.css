@@ -82,6 +82,7 @@ main::before {
   line-height: 20px;
   text-align: right;
   color: var(--highlight-color);
+  padding: 50px 0px 50px 0px;
 }
 /* conteiner-galeria */
 
@@ -92,25 +93,20 @@ main::before {
   padding: 30px;
 }
 
-.galeria-background {
+.lista-galeria {
   position: relative;
 }
-.galeria-background::before {
-  content: "";
-  position: absolute;
-  right: -125px;
-  width: max-content;
-  height: max-content;
-  background-image: url("../images/backgrounds/lamps.png");
-  background-repeat: no-repeat;
-  background-position: center right;
+ .galeria-background {
+  background: var(--background-lamp-image) 120% / 56% no-repeat;
+  justify-content: center;
+  bottom: 40px;
+ width: 100%;
 }
+
 .galeria-background .conteiner {
   align-items: flex-start;
 }
-.galeria-background {
-  max-width: 100%;
-}
+
 .conteudo-section-galeria li img {
   object-fit: cover;
   width: 100%;
@@ -132,6 +128,7 @@ main::before {
 .conteudo-section-galeria {
   padding-bottom: 120px;
 }
+/* Section formulário */
 .conteiner-forms {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -159,6 +156,9 @@ main::before {
   padding: 24px;
   background-color: var(--primary-color);
   box-shadow: 30px 25px var(--highlight-color);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 .conteiner-forms {
   padding-bottom: 120px;
@@ -179,6 +179,9 @@ main::before {
   line-height: 155%;
   display: flex;
   margin-bottom: 40px;
+}
+.conteudo-formulario  h1{
+  align-items: center;
 }
 .conteudo-formulario p {
   max-width: 700px;
@@ -209,7 +212,11 @@ main::after {
   z-index: -1;
   background-size: cover;
 }
-
+@media (max-width: 1100px){
+  .galeria-background{
+    background-image: none;
+  }
+}
 @media (max-width: 800px) {
   .formulario{
     margin-right: 30px;
