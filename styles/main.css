@@ -162,6 +162,7 @@ main::before {
 }
 .conteiner-forms {
   padding-bottom: 120px;
+  max-width: 100%;
 }
 .conteudo-formulario {
   display: flex;
@@ -219,7 +220,7 @@ main::after {
 }
 @media (max-width: 800px) {
   .formulario{
-    margin-right: 30px;
+    margin-right: 40px;
   }
   .titulo-formulario h1 {
     font-size: 3rem;
@@ -300,6 +301,9 @@ main::after {
 }
 
 @media (max-width: 400px) {
+  .formulario{
+    width: 250px;
+  }
   main::before {
     max-height: 200px;
   }

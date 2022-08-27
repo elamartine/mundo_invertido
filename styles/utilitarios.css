@@ -1,6 +1,7 @@
 /* conteiner section main */
 
 .conteiner {
+ 
   max-width: 1400px;
   padding-left: 20px;
   padding-right: 20px;
@@ -29,7 +30,6 @@
   transition: background 1s;
 }
 .btn-2{
- max-width: fit-content;
  display: inline-block;
   cursor: pointer;
   text-transform: uppercase;
@@ -78,6 +78,9 @@
     font-size: 1rem;
     padding: 12px 28px;
   }
+  .btn-2{
+    font-size: 1rem;
+  }
 }
 @media (max-width: 400px) {
   .btn {
@@ -86,6 +89,9 @@
   }
   .titulo{
     align-self: baseline;
+  }
+  .btn-2{
+    font-size: 14px;
   }
 
 }

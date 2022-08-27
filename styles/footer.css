@@ -1,16 +1,19 @@
-.conteiner-footer {
+footer{
+  position: relative;
   background-color: var(--footer-background-color);
+  overflow: hidden;
+  z-index: -1;
 }
 
-.footer-conteiner {
+footer .conteiner {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding-bottom: 80px;
-  padding-top: 80px;
+  align-items: center;
+  padding: 80px 40px;
 }
-.footer-conteiner p {
+
+footer  p {
   text-align: center;
   max-width: 62ch;
   padding-bottom: 24px;
@@ -20,4 +23,50 @@
   font-size: 16px;
   line-height: 20px;
   color: var(--highlight-color);
+}
+footer::after, footer::before{
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  background: url("../images/footer/tape.svg") no-repeat;
+  background-size: contain;
+  bottom: -50px;
+}
+
+footer::after{
+  right: -50px;
+  transform: rotateZ(20deg);
+}
+footer::before{
+  left: -50px;
+  transform: rotateZ(-20deg);
+}
+
+@media (max-width: 1200px){
+  footer::after{
+    right: -150px;
+    
+  }
+  footer::before{
+    left: -150px;
+  }
+}
+@media (max-width: 900px){
+  footer::after{
+    right: -200px;
+    
+  }
+  footer::before{
+    left: -200px;
+  }
+}
+@media (max-width: 800px){
+  footer::after{
+    display: none;
+    
+  }
+  footer::before{
+   display: none;
+  }
 }
