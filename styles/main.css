@@ -146,9 +146,9 @@ main::before {
 .item-formulario label {
   margin-bottom: 6px;
   margin-top: 10px;
-   font-family: "Libre Baskerville";
-   font-size: 1rem;
-   color: #fff;
+  font-family: "Libre Baskerville";
+  font-size: 1rem;
+  color: #fff;
 }
 
 .item-formulario textarea {
@@ -160,7 +160,7 @@ main::before {
   background-color: var(--primary-color);
   box-shadow: 30px 25px var(--highlight-color);
 }
-.conteiner-forms{
+.conteiner-forms {
   padding-bottom: 120px;
 }
 .conteudo-formulario {
@@ -191,6 +191,7 @@ main::before {
   line-height: 20px;
   color: var(--highlight-color);
 }
+
 main {
   position: relative;
   display: flex;
@@ -210,11 +211,14 @@ main::after {
 }
 
 @media (max-width: 800px) {
-  .titulo-formulario h1{
+  .formulario{
+    margin-right: 30px;
+  }
+  .titulo-formulario h1 {
     font-size: 3rem;
     line-height: 133%;
   }
-  .conteudo-section-2 h1{
+  .conteudo-section-2 h1 {
     font-size: 2rem;
   }
   main::before {
@@ -261,10 +265,10 @@ main::after {
 }
 
 @media (max-width: 600px) {
-  .conteudo-section-2 h1{
+  .conteudo-section-2 h1 {
     font-size: 2.5rem;
   }
-  .titulo-formulario h1{
+  .titulo-formulario h1 {
     font-size: 1.5rem;
   }
   .video {
