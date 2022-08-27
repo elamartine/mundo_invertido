@@ -92,6 +92,9 @@ main::before {
   gap: 60px;
   padding: 30px;
 }
+.conteudo-section-galeria li{
+  padding: 20px;
+}
 
 .lista-galeria {
   position: relative;
