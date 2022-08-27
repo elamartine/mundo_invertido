@@ -142,6 +142,7 @@ main::before {
   background-color: black;
   padding: 10px;
   border: #fff solid 2px;
+  color: #fff;
 }
 .item-formulario label {
   margin-bottom: 6px;
@@ -154,6 +155,9 @@ main::before {
 .item-formulario textarea {
   background-color: black;
   border: #fff solid 2px;
+  color: #fff;
+  min-height: 150px;
+  resize: none;
 }
 .formulario {
   padding: 24px;
